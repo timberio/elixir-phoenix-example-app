@@ -27,6 +27,11 @@ config :logger,
   backends: [Timber.LoggerBackend],
   handle_otp_reports: false # Timber handles errors, structures them, and adds additional metadata
 
+config :timber,
+  transport: Timber.Transports.HTTP,
+  api_key: System.get_env("TIMBER_LOGS_KEY"),
+  http_client: Timber.Transports.HTTP.HackneyClient
+
 config :timber, :capture_errors, true
 
 # Import environment specific config. This must remain at the bottom
