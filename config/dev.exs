@@ -28,7 +28,7 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Endpoint,
 
 # Configure timber to be development friendly
 config :timber,
-  transport: Timber.Transports.IODevice,
+  transport: Timber.Transports.IODevice
 
 config :timber, :io_device,
   colorize: true,
