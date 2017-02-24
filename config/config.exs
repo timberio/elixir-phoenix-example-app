@@ -15,12 +15,19 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Endpoint,
   secret_key_base: "PIW+jnFP5piAAlp679uxb3Px1YD2pA7IQXqnQz67AC/tZXiAoqMpjjJTEFZ6RQXp",
   render_errors: [view: ElixirPhoenixExampleApp.ErrorView, accepts: ~w(html json)],
   pubsub: [name: ElixirPhoenixExampleApp.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+           adapter: Phoenix.PubSub.PG2],
+  instrumenters: [Timber.Integrations.PhoenixInstrumenter]
 
-# Configures Elixir's Logger
-config :logger, :console,
-  format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+# Configure Timber to capture Ecto events
+config :my_app, ElixirPhoenixExampleApp.Repo,
+  loggers: [{Timber.Integrations.EctoLogger, :log, [:info]}]
+
+# Configure logger to use Timber
+config :logger,
+  backends: [Timber.LoggerBackend],
+  handle_otp_reports: false # Timber handles errors, structures them, and adds additional metadata
+
+config :timber, :capture_errors, true
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

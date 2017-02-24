@@ -17,3 +17,14 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Repo,
   database: "elixir_phoenix_example_app_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+# Configure timber to be development friendly
+config :timber,
+  transport: Timber.Transports.IODevice,
+
+config :timber, :io_device,
+  colorize: true,
+  format: :logfmt,
+  print_timestamps: true,
+  print_log_level: true,
+  print_metadata: false
