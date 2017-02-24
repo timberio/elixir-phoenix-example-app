@@ -26,8 +26,16 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Endpoint,
     ]
   ]
 
-# Do not include metadata nor timestamps in development logs
-config :logger, :console, format: "[$level] $message\n"
+# Configure timber to be development friendly
+config :timber,
+  transport: Timber.Transports.IODevice,
+
+config :timber, :io_device,
+  colorize: true,
+  format: :logfmt,
+  print_timestamps: true,
+  print_log_level: true,
+  print_metadata: false
 
 # Set a higher stacktrace during development. Avoid configuring such
 # in production as building large stacktraces may be expensive.
