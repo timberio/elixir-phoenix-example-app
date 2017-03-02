@@ -24,10 +24,7 @@ config :my_app, ElixirPhoenixExampleApp.Repo,
 
 # Configure logger to use Timber
 config :logger,
-  backends: [Timber.LoggerBackend],
-  handle_otp_reports: false # Timber handles errors, structures them, and adds additional metadata
-
-config :timber, :capture_errors, true
+  backends: [Timber.LoggerBackend]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
