@@ -1,7 +1,7 @@
 defmodule ElixirPhoenixExampleApp.PageController do
   use ElixirPhoenixExampleApp.Web, :controller
 
-  def boom do
+  def boom(conn, _params) do
     raise "boom"
   end
 
