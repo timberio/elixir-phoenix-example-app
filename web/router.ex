@@ -16,6 +16,7 @@ defmodule ElixirPhoenixExampleApp.Router do
   scope "/", ElixirPhoenixExampleApp do
     pipe_through :browser # Use the default browser stack
 
+    get "/boom", PageController, :boom
     get "/", PageController, :index
   end
 
