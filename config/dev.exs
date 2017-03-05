@@ -26,17 +26,6 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Endpoint,
     ]
   ]
 
-# Configure timber to be development friendly
-config :timber,
-  transport: Timber.Transports.IODevice
-
-config :timber, :io_device,
-  colorize: true,
-  format: :logfmt,
-  print_timestamps: true,
-  print_log_level: true,
-  print_metadata: false
-
 # Set a higher stacktrace during development. Avoid configuring such
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
@@ -44,8 +33,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "benjohnson",
+  password: "",
   database: "elixir_phoenix_example_app_dev",
   hostname: "localhost",
   pool_size: 10

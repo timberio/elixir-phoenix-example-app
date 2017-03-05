@@ -18,14 +18,13 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Endpoint,
            adapter: Phoenix.PubSub.PG2],
   instrumenters: [Timber.Integrations.PhoenixInstrumenter]
 
-# Configure Timber to capture Ecto events
-config :my_app, ElixirPhoenixExampleApp.Repo,
-  loggers: [{Timber.Integrations.EctoLogger, :log, [:info]}]
-
-# Configure logger to use Timber
-config :logger,
-  backends: [Timber.LoggerBackend]
+# Configures Elixir's Logger
+ config :logger, :console,
+   format: "$time $metadata[$level] $message\n",
+   metadata: [:request_id]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
+
+import_config "timber.exs"
