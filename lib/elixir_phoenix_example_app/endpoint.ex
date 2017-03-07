@@ -41,5 +41,244 @@ defmodule ElixirPhoenixExampleApp.Endpoint do
   plug Timber.Integrations.ContextPlug
   plug Timber.Integrations.EventPlug
 
+  # Add Timber plugs for capturing HTTP context and events
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+  plug Timber.Integrations.EventPlug
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+
+
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+
+
+
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.ContextPlug
+
+
+
+
+
+
+
+
+
+
+
+  plug Timber.Integrations.EventPlug
+
+
+
+
+
+
+
+
+
+
+
+  # Add Timber plugs for capturing HTTP context and events
+  plug Timber.Integrations.ContextPlug
+  plug Timber.Integrations.EventPlug
+
   plug ElixirPhoenixExampleApp.Router
+
+
+
+
+
+
+
+
+
+
 end
