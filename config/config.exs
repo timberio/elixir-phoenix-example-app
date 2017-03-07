@@ -27,6 +27,5 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Endpoint,
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
 
-import_config "timber.exs"
 # Import Timber, structured logging
 import_config "timber.exs"

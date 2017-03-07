@@ -28,7 +28,7 @@ defmodule ElixirPhoenixExampleApp.Web do
 
   def controller do
     quote do
-      use Phoenix.Controller, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false
+      use Phoenix.Controller, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false, log: false
 
       alias ElixirPhoenixExampleApp.Repo
       import Ecto
