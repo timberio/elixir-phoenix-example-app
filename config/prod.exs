@@ -22,7 +22,7 @@ config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Endpoint,
 config :logger, level: :info
 
 # Configure your database
-config :hello_phoenix, ElixirPhoenixExampleApp.Repo,
+config :elixir_phoenix_example_app, ElixirPhoenixExampleApp.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
