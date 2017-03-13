@@ -24,4 +24,4 @@
   "postgrex": {:hex, :postgrex, "0.13.2", "2b88168fc6a5456a27bfb54ccf0ba4025d274841a7a3af5e5deb1b755d95154e", [:mix], [{:connection, "~> 1.0", [hex: :connection, optional: false]}, {:db_connection, "~> 1.1", [hex: :db_connection, optional: false]}, {:decimal, "~> 1.0", [hex: :decimal, optional: false]}]},
   "ranch": {:hex, :ranch, "1.3.2", "e4965a144dc9fbe70e5c077c65e73c57165416a901bd02ea899cfd95aa890986", [:rebar3], []},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.1", "28a4d65b7f59893bc2c7de786dec1e1555bd742d336043fe644ae956c3497fbe", [:make, :rebar], []},
-  "timber": {:git, "https://github.com/timberio/timber-elixir.git", "2cc231f1eabddceeafa5477e55f53aeb7be0899c", [branch: "feature/http-cleanup"]}}
+  "timber": {:hex, :timber, "1.1.11", "f4be4800410d28b9b66fa8d129f2d4421be87e2fa77c543aacc8320d961b43af", [:mix], [{:ecto, "~> 2.0", [hex: :ecto, optional: true]}, {:hackney, "~> 1.6", [hex: :hackney, optional: true]}, {:msgpax, "~> 1.0", [hex: :msgpax, optional: false]}, {:phoenix, "~> 1.2", [hex: :phoenix, optional: true]}, {:plug, "~> 1.2", [hex: :plug, optional: true]}, {:poison, "~> 1.0 or ~> 2.0 or ~> 3.0", [hex: :poison, optional: false]}]}}
