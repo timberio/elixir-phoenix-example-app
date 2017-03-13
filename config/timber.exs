@@ -17,7 +17,6 @@ config :logger,
 config :timber,
   transport: Timber.Transports.HTTP,
   api_key: {:system, "TIMBER_LOGS_KEY"},
-  debug_io_device: :stdio,
   http_client: Timber.Transports.HTTP.HackneyClient
 
 # For dev / test environments, always log to STDOUt and format the logs properly
