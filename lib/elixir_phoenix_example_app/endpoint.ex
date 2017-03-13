@@ -38,5 +38,9 @@ defmodule ElixirPhoenixExampleApp.Endpoint do
     key: "_elixir_phoenix_example_app_key",
     signing_salt: "Bflhn9xn"
 
+  # Add Timber plugs for capturing HTTP context and events
+  plug Timber.Integrations.ContextPlug
+  plug Timber.Integrations.EventPlug
+
   plug ElixirPhoenixExampleApp.Router
 end
