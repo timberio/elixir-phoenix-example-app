@@ -21,6 +21,7 @@ config :timber,
   http_client: Timber.Transports.HTTP.HackneyClient
 
 # For dev / test environments, always log to STDOUt and format the logs properly
+raise Mix.env()
 if Mix.env() == :dev || Mix.env() == :test do
   config :timber, transport: Timber.Transports.IODevice
 
