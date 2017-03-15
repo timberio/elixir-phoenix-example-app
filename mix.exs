@@ -38,7 +38,7 @@ defmodule ElixirPhoenixExampleApp.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:timber, "~> 1.0"},
+     {:timber, github: "timberio/timber-elixir", branch: "run-http-preflight-check"},
      {:hackney, "~> 1.6"}]
   end
 
