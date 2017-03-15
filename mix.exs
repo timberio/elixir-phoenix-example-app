@@ -19,7 +19,7 @@ defmodule ElixirPhoenixExampleApp.Mixfile do
   def application do
     [mod: {ElixirPhoenixExampleApp, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :timber, :hackney]]
+                    :phoenix_ecto, :postgrex, :hackney, :timber]]
   end
 
   # Specifies which paths to compile per environment.
