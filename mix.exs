@@ -38,7 +38,7 @@ defmodule ElixirPhoenixExampleApp.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:timber, "== 2.0.0-rc5"}]
+     {:timber, "== 2.0.0-rc6"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
